@@ -14,8 +14,9 @@ public class Movil {
     private String nombre;
     private String marca;
     private String modelo;
+    private int GB;
     private String fechaSalidaVenta;
-    private String precio;
+    private float precio;
     
     
     
@@ -36,15 +37,15 @@ public class Movil {
     }
     
     public void setNombre(String nombre){
-        this.nombre = nombre.toUpperCase();
-    }
-    
-    public void setMarca(String marca){
-        this.marca = marca;
+        this.nombre = nombre;
     }
     
     public String getMarca(){
         return marca;
+    }
+    
+    public void setMarca(String marca){
+        this.marca = marca;
     }
     
     public String getModelo(){
@@ -55,6 +56,14 @@ public class Movil {
         this.modelo = modelo;
     }
     
+    public int getGB(){
+        return GB;
+    }
+    
+    public void setGB(int gb){
+        this.GB = gb;
+    }
+   
     public String getFechaSalidaVenta(){
         return fechaSalidaVenta;
     }
@@ -63,12 +72,22 @@ public class Movil {
         this.fechaSalidaVenta = fechaSalidaVenta;
     }
     
-    public String getPrecio(){
+    public float getPrecio(){
         return precio;
     }
     
-    public void setPrecio(String precio){
+    public void setPrecio(float precio){
         this.precio = precio;
+    }
+    
+    public String GBToString(){
+       String r = "GB: " + GB;
+       return r;
+    }
+    
+    public String precioToString(){
+       String r = "Precio: " + precio;
+       return r;
     }
     
     @Override
