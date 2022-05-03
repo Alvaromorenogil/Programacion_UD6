@@ -1,17 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.alvaromorenogil.proyectocsv;
 
-/**
- *
- * @author usuario
- */
 public class Datos {
     
     private String pais;
-    private String codPais;
+    private String Anno;
     private String reporteBullying;
 
     public String getPais() {
@@ -22,12 +14,12 @@ public class Datos {
         this.pais = pais;
     }
 
-    public String getCodPais() {
-        return codPais;
+    public String getAnno() {
+        return Anno;
     }
 
-    public void setCodPais(String codPais) {
-        this.codPais = codPais;
+    public void setAnno(String Anno) {
+        this.Anno = Anno;
     }
 
     public String getReporteBullying() {
@@ -37,7 +29,6 @@ public class Datos {
     public void setReporteBullying(String reporteBullying) {
         this.reporteBullying = reporteBullying;
     }
-    
-    
+
     
 }
